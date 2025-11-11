@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "X Bot Highlighter",
+  "version": "1.0",
+  "description": "高亮X.com上名单中的用户推文/回复，加标签或隐藏",
+  "permissions": ["storage"],
+  "host_permissions": ["https://x.com/*"],
+  "web_accessible_resources": [
+    {
+      "resources": ["data/*.json"],
+      "matches": ["https://x.com/*"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*"],
+      "js": ["js/content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "管理X高亮名单"
+  },
+  "icons": {
+    "16": "images/16.png",
+    "32": "images/32.png",
+    "48": "images/48.png",
+    "128": "images/128.png"
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 300px; padding: 10px; font-family: Arial; }
+    textarea { width: 100%; height: 100px; }
+    button { margin: 5px 0; padding: 5px 10px; }
+    label { display: block; margin: 5px 0; }
+  </style>
+</head>
+<body>
+  <h3>X Bot Blacklist Manager</h3>
+  <p>Current blacklist (one @username per line):</p>
+  <textarea id="list"></textarea>
+  <br>
+  <button id="load">Load List</button>
+  <button id="save">Save & Refresh X</button>
+  <button id="clear">Clear All</button>
+  <br>
+  <label><input type="checkbox" id="hideToggle"> Hide bot posts (instead of highlighting)</label>
+  <br>
+  <h4>Default bots (click to load from JSON):</h4>
+  <button id="default">Load Default Bot List</button>
+
+  <script src="js/popup.js"></script>
+</body>
+</html>

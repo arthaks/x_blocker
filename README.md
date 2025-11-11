@@ -16,7 +16,8 @@
 
 ```
 
-// 插入图片
+__逻辑图__
+![开始页面](other/arc.png)
 
 
 ## 使用
@@ -45,12 +46,15 @@
 
 
 ## 参考
-1. 去grok中让grok访问目标kol的推文，找出相应的垃圾bot，参考：xxxx
+1. 去grok中让grok访问目标kol的推文，找出相应的垃圾bot，写好提示词，不然会有误杀。参考：[简单的检索龙王帖子下的机器人](other/demo.md)
 2. 将整理出来的垃圾bot放置到json文件中， 刷新页面即可
 
 
-开始的页面
+__开始的页面__
+![开始页面](other/sb.jpg)
 
-高亮垃圾bot的页面
+__高亮垃圾bot的页面__
+![高亮垃圾bot的页面](other/highlight.jpg)
 
-隐藏垃圾bot的页面
+__隐藏垃圾bot的页面__
+![隐藏垃圾bot的页面](other/hide.jpg)
